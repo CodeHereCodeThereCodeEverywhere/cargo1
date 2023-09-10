@@ -8,7 +8,7 @@ function Cta() {
             <h2 className=" text-white text-center max-w-[684px] font-inter font-normal text-[20px] mt-[24px] flex ">Оставете вашият телефон и ние ще се свържем с вас, за да отговорим на всички въпроси</h2>
             <div className="flex flex-row justify-center mt-[46px]">
                 <form  className="text-[16px] font-inter leading-[24px] " >
-                    <input type="phone" name="Мобилен телефон" id="" placeholder="Мобилен телефон" className=" rounded-bl-md rounded-tl-md px-[20px] py-[20px] w-fit" />
+                    <input type="phone" minlength="12" required id="" placeholder="Мобилен телефон" className=" rounded-bl-md rounded-tl-md px-[20px] py-[20px] w-fit" />
                     <button className=" px-[20px] py-[20px] w-fit bg-[#E7F874] rounded-tr-md rounded-br-md text-base-black ">Изпрати</button>
                 </form>
 
