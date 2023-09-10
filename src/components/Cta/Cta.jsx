@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Cta() {
+    const [phone,setPhone] = useState('')
   return (
     <div className="w-full  bg-base-blue h-[602px] justify-center  mt-[115px] flex">
         <div className="max-w-[700px] w-full max-h-[368px] flex justify-center  flex-col  mt-[100px] ">
@@ -8,7 +9,7 @@ function Cta() {
             <h2 className=" text-white text-center max-w-[684px] font-inter font-normal text-[20px] mt-[24px] flex ">Оставете вашият телефон и ние ще се свържем с вас, за да отговорим на всички въпроси</h2>
             <div className="flex flex-row justify-center mt-[46px]">
                 <form  className="text-[16px] font-inter leading-[24px] " >
-                    <input type="phone" minlength="12" required id="" placeholder="Мобилен телефон" className=" rounded-bl-md rounded-tl-md px-[20px] py-[20px] w-fit" />
+                    <input type="tel" minlength="12" required id="" placeholder="Мобилен телефон" className=" rounded-bl-md rounded-tl-md px-[20px] py-[20px] w-fit" onChange={(e) => setPhone(e.target.value)} value={phone} />
                     <button className=" px-[20px] py-[20px] w-fit bg-[#E7F874] rounded-tr-md rounded-br-md text-base-black ">Изпрати</button>
                 </form>
 
