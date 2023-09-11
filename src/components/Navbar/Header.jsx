@@ -1,6 +1,23 @@
 import React from 'react'
 
 function Header() {
+    const [windowWidth, setWindowWidth] = useState(0);
+    const [isNavOpen, setIsNavOpen] = useState(false);
+  
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+  
+    useEffect(() => {
+      handleResize();
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
+    const isMobile = windowWidth < 922;
   return (
    <div className='w-full justify-center flex pt-8'>
     <div className='max-w-[1308px] flex justify-between  w-full  '>

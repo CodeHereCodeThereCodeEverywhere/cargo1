@@ -14,9 +14,14 @@ module.exports = {
 				'base-white':'#FFF',
 				'base-neutral': '#F0F5F4',
 				'base-blue':'#01303A',
-				'base-green': '#01303A',
+				'base-green': '#E7F874',
 				'base-text': '#01303A',
 			  },
+			  screens:{
+				'phone':{'min':'300px','max':'640px'},
+				'6-9':{'min':'640px','max':'982px'},
+				'9-12':{'min':'982px','max':'1280px'},
+			  }
 		},
 	},
 	plugins: [],

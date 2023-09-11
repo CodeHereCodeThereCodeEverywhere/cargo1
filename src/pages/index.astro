@@ -7,19 +7,19 @@ import Trust from '../components/Trust/Trust'
 import Process from '../components/Process/Process'
 
 import Resources from '../components/Resources/Resources'
+
 import Cta from '../components/Cta/Cta'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main class="bg-base-white">
 		
-		<!-- <Header /> -->
+		<!-- <Header client:load /> -->
 		<!-- <Hero /> -->
 		<Trust />
-		<!-- <Process /> -->
-		<Process />
-		<Resources />
-		<Cta />
+		<Process client:load />
+		<Resources client:load />
+		<Cta  client:load/>
 	</main>
 </Layout>
 

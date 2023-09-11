@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Resources() {
+function ResourcesMobile() {
     let  props = [
         {
             id:1,
@@ -42,4 +42,4 @@ function Resources() {
   )
 }
 
-export default Resources
+export default ResourcesMobile
