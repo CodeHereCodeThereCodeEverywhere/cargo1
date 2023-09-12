@@ -39,11 +39,11 @@ function Solutions() {
     <h1 className="font-space flex justify-center text-center phone:w-full phone:text-[28px]  sm:text-[32px] md:text-[38px] 9-12:mt-[89px] 9-12:text-[40px]    md:justify-center  phone:mt-2 sm:mt-4  xl:mt-[89px]   xl:text-[48px] xl:pl-2     font-semibold leading-[115%] ">
             Услуги и <br /> бизнес решения
         </h1>
-    <div class="container flex flex-col phone:px-1 mx-auto  lg:h-[1032px]  lg:flex-row    ">
+    <div class="container flex flex-col phone:px-1 mx-auto  lg:h-[1032px]  lg:flex-row phone:mt-[7vh]   ">
 <div class="flex items-center justify-center w-full h-96 lg:max-w-1/2  ">
             <img class=" w-full h-full max-w-2xl top-0" src="/Home/Solutions/Vector.png"/>
         </div>
-        <div class="w-full lg:max-w-[456px] md:pl-[80px] xl:pl-[120px] flex flex-col fill-inherit bg-inherit phone:mt-12 ">
+        <div class="w-full lg:max-w-[456px] md:pl-[80px] xl:pl-[120px] flex flex-col fill-inherit bg-inherit phone:mt-10 ">
           {text.map((item) => (
               <div class="lg:max-w-lg flex flex-row justify-start phone:mt-12 mt-[30px]">              
                 <div>
