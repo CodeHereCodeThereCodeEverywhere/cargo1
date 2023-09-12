@@ -23,7 +23,7 @@ function ResourcesMobile() {
     
     ]
   return (
-    <div className=' justify-center  xl:mt-[104px]  w-full   flex relative '>
+    <div className=' justify-center  xl:mt-[104px]  w-full   flex relative mt-[104px] '>
          <div className='max-w-[1296px]  w-full h-fit flex flex-col'>
         <h1 className="font-space flex justify-center phone:w-full phone:text-[28px]  sm:text-[32px] md:text-[38px] 9-12:mt-[89px] 9-12:text-[40px]    md:justify-center  phone:mt-2 sm:mt-4  xl:mt-[89px]   xl:text-[48px] xl:pl-2     font-semibold leading-[115px] ">
             Полезни ресурси
