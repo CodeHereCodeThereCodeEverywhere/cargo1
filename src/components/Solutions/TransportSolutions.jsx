@@ -18,23 +18,23 @@ const props = {heading:
 
   return (
     <div className=" w-full  justify-center flex">
-    <div className="max-w-[1296px] max- w-full ">
+    <div className="max-w-[1296px]  w-full flex ">
     
-    <div class="container flex flex-col px-2 py-10 mx-auto space-y-6 h-fit lg:py-16 lg:flex-row w-full    ">
-<div class="flex items-center justify-center w-full h-96 lg:max-w-[583px] ">
+    <div class="container flex flex-col  py-10 mx-auto  space-y-6 h-fit lg:py-16 lg:flex-row w-full    ">
+<div class="flex items-center justify-center w-full h-96 lg:max-w-[583px] xl:mt-[10vh] 6-9:mt-[12vh] ">
             <img class="w-full " src="/Home/Solutions/vector-1.png"/>
         </div>
-        <div class="w-full lg:max-w-[456px] text-left  flex flex-col fill-inherit bg-inherit phone:mt-12   ">
+        <div class="w-full lg:max-w-[456px]  text-left  flex flex-col fill-inherit bg-inherit   xl:mt-[10vh] 6-9:mt-[17vh] phone:mt-[10vh] xl:ml-[10vw]  ">
           
-              <div class="lg:max-w-[583px] flex flex-col justify-start phone:mt-12  6-9:mt-[100px]">             
+              <div class="lg:max-w-[583px] w-full phone:max-w-full flex flex-col justify-start   6-9:mt-[22vh] ">             
                 <div class="flex flex-col">
                 <h1 className="font-space text-[48px] phone:text-[32px]  leading-[115%] font-semibold -mt-0.25">{props.heading.h1}</h1>
                 <h2 className="font-inter text-[16px] leading-[170%] mt-[30px]">{props.heading.h4}</h2>
               </div>
-               <div className='grid xl:grid-cols-3 grid-cols-1 self-center'>
-              {props.stats.map((item) => (
-                 <div className='mt-[48px] phone:text-center'>
-                 <h1 className='font-space text-[32px] font-semibold '>
+               <div className='grid grid-cols-3 '>
+              {props.stats.map((item,index) => (
+                 <div className='mt-[48px] ' key={index}>
+                 <h1 className='font-space text-[32px] phone:text-[24px] font-semibold '>
                  {item.first}
                  </h1>
                  <h4 className='font-inter text-[16px] leading-[170%]'>
